@@ -25,6 +25,8 @@ function showMenu() {
 
       if (width < 575) {
           closeMenu();
+      } else {
+        navList.classList.remove("none");
       }
   });
 
