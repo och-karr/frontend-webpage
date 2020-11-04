@@ -1,22 +1,33 @@
 .nav {
   height: 158px;
-  // background-color: aquamarine;
+  background-color: rgb(204, 204, 204);
   display: flex;
   justify-content: space-between;
 
   @media #{$max575} {
     height: 50px;
+    padding: 0 14px 0 25px;
   }
 
   .logo {
     display: flex;
     height: 100%;
     align-items: center;
+    position: relative;
+    z-index: 2;
+
+    &__icon {
+      height: 20px;
+    }
     
     &__text {
       padding-left: 12px;
       font-size: 36px;
       font-weight: 700;
+
+      @media #{$max575} {
+        display: none;
+      }
     }
   }
 
@@ -25,13 +36,30 @@
     align-items: center;
     height: 100%;
     padding-right: 44px;
+
+    @media #{$max575} {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $white;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 0;
+      padding-bottom: 30vh;
+    }
   }
 
   &__list-el {
     padding-right: 40px;
 
-    &:hover {
+    @media #{$max575} {
+      padding-right: 0;
+      padding-bottom: 40px;
+    }
 
+    &:hover {
       .nav__link {
         color: $main-clr;
 
@@ -60,5 +88,24 @@
       transform: translateX(-50%);
       transition: width .2s;
     }
+  }
+
+  &__icon {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+
+    &--hamburger {
+      display: none;
+      width: 18px;
+  
+      @media #{$max575} {
+        display: block;
+      }
+    }
+  }
+
+  .none {
+    display: none;
   }
 }
