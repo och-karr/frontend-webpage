@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  font-family: $standard-font;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: $bcg-clr;
+}
+
+.wrapper {
+  max-width: 1290px;
+  min-width: 360px;
+  margin: 0 auto;
+}
