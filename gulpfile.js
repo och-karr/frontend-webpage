@@ -65,10 +65,15 @@ gulp.task('save-images', function() {
         .pipe(gulp.dest('./dist/images'));
 });
 
+gulp.task('save-json', function() {
+  return gulp.src('./app/data/*.json')
+      .pipe(gulp.dest('./dist/data/'));
+});
+
 //WATCH tasks
 gulp.task('watch', function() {
-    gulp.watch(['app/*.html', 'app/scss/**/*.scss', 'app/js/**/*.js', './app/images/**/*' ], gulp.series(['html', 'sass', 'js', 'save-html', 'save-js', 'save-images']));
+    gulp.watch(['app/*.html', 'app/scss/**/*.scss', 'app/js/**/*.js', './app/images/**/*' ], gulp.series(['html', 'sass', 'js', 'save-html', 'save-js', 'save-images', 'save-json']));
 });
 
 //run DEFAULT
-gulp.task('default', gulp.series(['save-html', 'sass', 'save-js', 'save-images', gulp.parallel('browserSync', 'watch')]));
+gulp.task('default', gulp.series(['save-html', 'sass', 'save-js', 'save-json', 'save-images', gulp.parallel('browserSync', 'watch')]));

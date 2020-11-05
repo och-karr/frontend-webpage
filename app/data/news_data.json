@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Lorem ipsum dolor sit amet adipiscing consectetur adipiscing",
+    "date": "10.10.2010 11:11",
+    "image": "./images/photos/article-img-1.png",
+    "description1": "Excepteur sint occaecat cupidatat non )"
+  },
+  {
+    "title": "Lorem Ipsum",
+    "date": "10.10.2010 11:11",
+    "image": "./images/photos/article-img-2.png",
+    "description1": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate "
+  },
+  {
+    "title": "Duis aute irure dolor",
+    "date": "10.10.2010 11:11",
+    "image": "./images/photos/article-img-3.png",
+    "description1": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+  },
+  {
+    "title": "Lipsum dolor sit sit amet consectetur adipiscing sit amet consectetur",
+    "date": "10.10.2010 11:11",
+    "image": "./images/photos/article-img-4.png",
+    "description1": "Ut enim ad minim veniam, quis nostrud Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate ",
+    "description2": "Ut enim ad minim veniam, quis nostrud Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate "
+  },
+  {
+    "title": "Duis aute irure dolor",
+    "date": "10.10.2010 11:11",
+    "image": "./images/photos/article-img-3.png",
+    "description1": "Duis aute irure dolor in reprehenderit in voluptate velit"  
+  }
+]
+

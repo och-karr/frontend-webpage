@@ -34,6 +34,10 @@ body {
   }
 
   @media #{$max575} {
+    padding: 0 15px;
+  }
+
+  @media #{$max400} {
     padding: 0;
   }
 }
@@ -42,6 +46,14 @@ body {
   max-width: 1290px;
   min-width: 360px;
   margin: 0 auto;
+}
+
+.section {
+  padding: 4.63rem 5rem;
+
+  @media #{$max767} {
+    padding: 4.63rem 30px;
+  }
 }
 
 a {

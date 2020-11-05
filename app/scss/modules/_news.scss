@@ -1,0 +1,101 @@
+.news {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__part {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media #{$max575} {
+      width: 100%;
+    }
+
+    &--one {
+      padding-right: 15px;
+    }
+
+    &--two {
+      padding-left: 15px;
+    }
+  }
+
+  &__title {
+    padding-bottom: 1.88rem;
+  }
+  
+  .article {
+    display: flex;
+    flex-wrap: wrap;
+
+    
+
+    &__title {
+      font-size: 1.25rem;
+      line-height: 2.04rem;
+      padding: 0 0 1.25rem 2.81rem;
+      position: relative;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 2.5rem;
+        height: 2.5rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url('../../images/icons/db-quotes.svg');
+        background-size: contain;
+        background-position: center;
+      }
+
+      @media #{$max575} {
+        order: 2;
+        width: 60%;
+        padding-left: 13px;
+
+        &::before {
+          background: none;
+        }
+      }
+    }
+
+    &__date-desc {
+      font-size: 12px;
+      padding-bottom: .63rem;
+
+      @media #{$max575} {
+        display: none;
+      }
+    }
+
+    &__figure {
+      @media #{$max575} {
+        order: 1;
+        width: 40%;
+      }
+    }
+
+    &__image {
+      width: 100%;
+
+      @media #{$max575} {
+        height: 92px;
+        object-fit: cover;
+      }
+    }
+
+    &__desc {
+      font-size: 14px;
+      line-height: 1.75rem;
+      padding: .94rem 0 2rem 0;
+
+      
+      @media #{$max575} {
+        order: 3;
+        padding-top: 0;
+      }
+    }
+  }
+}

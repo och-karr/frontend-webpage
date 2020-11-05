@@ -1,8 +1,17 @@
-h1 {
+h2 {
   font-size: 2.25rem;
   font-weight: 700;
+  text-align: center;
+  width: 100%;
 
   @media #{$max1199} {
     // font-size: 27px;
   }
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2.04rem;
+  font-weight: 700;
+  width: 100%;
 }
