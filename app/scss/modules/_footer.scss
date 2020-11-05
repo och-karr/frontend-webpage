@@ -1,0 +1,15 @@
+.footer {
+  height: 7.13rem;
+  display: flex;
+  width: 100%;
+  position: relative;
+  background-color: $footer-clr;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    font-size: 1.13rem;
+    color: $white;
+    
+  }
+}

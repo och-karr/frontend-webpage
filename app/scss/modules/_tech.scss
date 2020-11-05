@@ -1,0 +1,124 @@
+.tech {
+  padding-bottom: 30px;
+  
+  @media #{$max991} {
+    padding-right: 0;
+    padding-left: 0;
+   }
+
+  &__carousel {
+    padding: 0 1rem;
+
+    @media #{$max991} {
+     padding: 0;
+     margin: 0 -30px;
+    }
+  }
+
+  &__el {
+    font-size: 16px;
+
+    @media #{$max1270} {
+      font-size: 12px;
+    }
+
+    @media #{$max991} {
+      font-size: 14px;
+    }
+  }
+
+  &__container {
+    margin: 0.94em auto;
+    width: 13.75em;
+    height: 14.06em;
+    background: $white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+    padding: 1.88rem 15px 0;
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+
+      .tech__icon--one {
+        background-color: #1C78C0;
+      }
+
+      .tech__icon--two {
+        background-color: #EFD81D;
+      }
+
+      .tech__icon--three {
+        background-color: #CE0000;
+      }
+
+      .tech__icon--four {
+        background-color: #DC4D25;
+      }
+
+      .tech__name::before {
+        background-color: $main-clr;
+      }
+    }
+
+    @media #{$max575} {
+      margin: .94em 15px;
+    }
+  }
+
+  &__icon {
+    width: 5.38em;
+    height: 5.38em;
+    margin: 0 auto;
+    mask-repeat: no-repeat;
+
+    &--one {
+      mask: url('../../images/icons/webpack-icon.svg');
+      mask-position: center;
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      background-color: $black;
+    }
+
+    &--two {
+      mask: url('../../images/icons/js-icon.svg');
+      mask-position: center;
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      background-color: $black;
+    }
+
+    &--three {
+      mask: url('../../images/icons/npm-icon.svg');
+      mask-position: center;
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      background-color: $black;
+    }
+
+    &--four {
+      mask: url('../../images/icons/html-icon.svg');
+      mask-position: center;
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      background-color: $black;
+    }
+  }
+
+  &__name {
+    padding-top: 1.88rem;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 1.56rem;
+      height: 1px;
+      top: 0.94rem;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      background-color: $black;
+    }
+  }
+}

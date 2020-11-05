@@ -24,10 +24,6 @@
       padding: 0;
     }
   }
-
-  &__title {
-    padding-bottom: 1.88rem;
-  }
   
   .article {
     display: flex;
@@ -104,6 +100,28 @@
         order: 3;
         padding-top: 0;
       }
+    }
+  }
+
+  &__load {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $main-clr;
+    margin: 3rem auto 0;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: inline-block;    
+      width: 20px;
+      height: 20px;
+      background-image: url('../../images/icons/load.svg');
+      background-position-x: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      top: 1px;
+      right: -23px;
     }
   }
 }
