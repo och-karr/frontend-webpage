@@ -4,6 +4,16 @@
   border-radius: 20px;
   overflow: hidden;
 
+  @media #{$max767} {
+    position: relative;
+  }
+
+  @media #{$max400} {
+      flex-wrap: wrap;
+      border-radius: 0;
+      box-shadow: none;
+  }
+
   &__main-img {
     width: 50%;
     height: 680px;
@@ -16,6 +26,30 @@
     @media #{$max991} {
       height: 450px;
     }
+
+    @media #{$max767} {
+      width: auto;
+  }
+
+    @media #{$max400} {
+      width: 100%;
+    }
+
+    &--desktop {
+      @media #{$max400} {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
+
+      @media #{$max400} {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 
   &__form-container {
@@ -26,6 +60,20 @@
     align-items: center;
     background-color: $white;
     padding: 20px 15px;
+
+    @media #{$max767} {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 60%;
+      background-color: rgba(255, 255, 255, 0.85);
+    }
+
+    @media #{$max400} {
+      width: 100%;
+      position: static;
+    }
   }
 
   &__panel {
