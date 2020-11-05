@@ -1,6 +1,5 @@
 .nav {
-  height: 158px;
-  // background-color: rgb(204, 204, 204);
+  height: 9.88rem;
   display: flex;
   justify-content: space-between;
 
@@ -14,7 +13,7 @@
     height: 100%;
     align-items: center;
     position: relative;
-    z-index: 2;
+    z-index: 3;
 
     &__icon {
       @media #{$max575} {
@@ -23,8 +22,8 @@
     }
     
     &__text {
-      padding-left: 12px;
-      font-size: 36px;
+      padding-left: 0.75rem;
+      font-size: 2.25rem;
       font-weight: 700;
 
       @media #{$max575} {
@@ -41,15 +40,16 @@
 
     @media #{$max575} {
       position: absolute;
+      z-index: 2;
       top: 0;
       left: 0;
       background-color: $white;
       width: 100%;
       height: 100%;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       padding-right: 0;
-      padding-bottom: 30vh;
+      padding-top: 25vh;
     }
   }
 
@@ -74,7 +74,7 @@
   }
 
   &__link {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     position: relative;
 
@@ -94,7 +94,7 @@
 
   &__icon {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     cursor: pointer;
 
     &--hamburger {

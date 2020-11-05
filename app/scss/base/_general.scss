@@ -23,6 +23,7 @@ html {
 
 body {
   background-color: $bcg-clr;
+  position: relative;
 
   @media #{$max1460} {
     padding: 0 60px;
@@ -46,4 +47,5 @@ body {
 a {
   color: $black;
   text-decoration: none;
+  cursor: pointer;
 }
