@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" panel="width=device-width, initial-scale=1.0">
+  <title>Frontend</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <nav class="nav">
+        <a href="#" class="logo">
+          <img src="./images/icons/logo.svg" alt="" class="logo__icon">
+          <p class="logo__text">Front-End</p>
+        </a>
+        <ul class="nav__list">
+          <li class="nav__list-el">
+            <a href="#news" class="nav__link">Wiadomości</a>
+          </li>
+          <li class="nav__list-el">
+            <a href="#tech" class="nav__link">Technologie</a>
+          </li>
+        </ul>
+        <img src="./images/icons/hamburger.svg" alt="" class="nav__icon nav__icon--hamburger">
+        <img src="./images/icons/close.svg" alt="" class="nav__icon nav__icon--close none">
+      </nav>
+      <header class="header">
+        <img src="./images/photos/header-desktop.png" alt="" class="header__main-img header__main-img--desktop">
+        <img src="./images/photos/header-mobile.png" alt="" class="header__main-img header__main-img--mobile">
+        <div class="header__form-container">
+          <div class="header__panel header__panel--welcome">
+            <h2 class="header__title">Dzień dobry</h1>
+              <button class="main-btn login-btn">Zaloguj się</button>
+              <span class="header__text">lub</span>
+              <button class="main-btn main-btn--contour register-btn">Zarejestruj</button>
+          </div>
+          <form action="" class="header__panel header__panel--login none">
+            <h2 class="header__title">Zaloguj się</h2>
+            <label for="">
+              <input type="text" placeholder="Login" class="input">
+            </label>
+            <label class="header__label--password" for="">
+              <div class="header__eye"></div>
+              <input type="password" placeholder="Hasło" class="input input--password">
+            </label>
+            <span class="header__text">
+              <div class="toggle">
+                <div class="toggle__dot"></div>
+              </div>
+              Zapamiętaj moją sesję
+            </span>
+            <input type="submit" class="main-btn welcome-btn" value="Dalej">
+            <a href="#" class="header__undertext register-btn">Nie mam konta</a>
+          </form>
+          <form action="" class="header__panel header__panel--register none">
+            <h2 class="header__title">Zarejestruj się</h2>
+            <label for="">
+              <input type="text" placeholder="Login" class="input">
+            </label>
+            <label for="">
+              <input type="password" placeholder="Hasło" class="input">
+            </label>
+            <div class="header__line"></div>
+            <label for="">
+              <input type="text" placeholder="Imię i nazwisko" class="input">
+            </label>
+            <label for="">
+              <input type="email" placeholder="Adres e-mail" class="input">
+            </label>
+            <label class="header__checkbox-container">
+              Wyrażam zgodę na lorem ipsum lorem ipsum
+              <input class="header__checkbox-input" type="checkbox">
+              <span class="header__checkbox-checkmark"></span>
+            </label>
+            <input type="submit" class="main-btn welcome-btn" value="Załóż konto">
+            <a href="#" class="header__undertext login-btn">Chcę się zalogować</a>
+          </form>
+        </div>
+      </header>
+      <section id="news" class="section news">
+        <h2 class="section__title">Wiadomości</h2>
+        <div class="news__part news__part--one">
+        </div>
+        <div class="news__part news__part--two">
+        </div>
+        <a href="#" class="news__load">Załaduj więcej</a>
+      </section>
+      <section id="tech" class="section tech">
+        <h2 class="section__title">Nasze Technologie</h2>
+        <div class="tech__carousel">
+          <div class="tech__el tech__el">
+            <div class="tech__container">
+              <div class="tech__icon tech__icon--one"></div>
+              <h4 class="tech__name">Webpack</h4>
+            </div>
+          </div>
+          <div class="tech__el">
+            <div class="tech__container">
+              <div class="tech__icon tech__icon--two"></div>
+              <h4 class="tech__name">JavaScript</h4>
+            </div>
+          </div>
+          <div class="tech__el">
+            <div class="tech__container">
+              <div class="tech__icon tech__icon--three"></div>
+              <h4 class="tech__name">Node package Manager</h4>
+            </div>
+          </div>
+          <div class="tech__el">
+            <div class="tech__container">
+              <div class="tech__icon tech__icon--four"></div>
+              <h4 class="tech__name">HTML</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <p class="footer__text">K2</p>
+    </footer>
+  </div>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/index.min.js"></script>
+</body>
+
+</html>
