@@ -119,10 +119,36 @@
 
   &__title {
     padding-bottom: 2.5rem;
+  }
 
-    // @media #{$max1199} {
-    //   padding-bottom: 30px;
-    // }
+  &__label--password {
+    position: relative;
+  }
+
+  &__eye {
+    width: 20px;
+    height: 13px;
+    mask-image: url('../../images/icons/eye.svg');
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    background-color: $dark-grey;
+    position: absolute;
+    top: 16px;
+    right: 7px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $black;
+    }
+
+    &--active {
+      background-color: $black;
+    }
+
+    @media #{$max991} {
+      top: 13px;
+    }
   }
 
   .toggle {

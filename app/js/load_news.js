@@ -1,4 +1,5 @@
-fetch('../data/news_data.json')
+window.addEventListener('DOMContentLoaded', () => {
+  fetch('../data/news_data.json')
   .then(res => res.json())
   .then(data => {
     const newsPartOne = document.querySelector('.news__part--one');
@@ -30,3 +31,4 @@ fetch('../data/news_data.json')
     newsPartOne.innerHTML = contentOne;
     newsPartTwo.innerHTML = contentTwo;
   })
+});
