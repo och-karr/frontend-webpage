@@ -11,6 +11,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 
   @media #{$max1199} {
     font-size: 14px;
