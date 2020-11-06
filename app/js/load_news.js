@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-  fetch('../data/news_data.json')
+  fetch('data/news_data.json')
   .then(res => res.json())
   .then(data => {
     const newsPartOne = document.querySelector('.news__part--one');

@@ -73,7 +73,7 @@
     mask-repeat: no-repeat;
 
     &--one {
-      mask: url('../../images/icons/webpack-icon.svg');
+      mask: url('../images/icons/webpack-icon.svg');
       mask-position: center;
       mask-size: contain;
       mask-repeat: no-repeat;
@@ -81,7 +81,7 @@
     }
 
     &--two {
-      mask: url('../../images/icons/js-icon.svg');
+      mask: url('../images/icons/js-icon.svg');
       mask-position: center;
       mask-size: contain;
       mask-repeat: no-repeat;
@@ -89,7 +89,7 @@
     }
 
     &--three {
-      mask: url('../../images/icons/npm-icon.svg');
+      mask: url('../images/icons/npm-icon.svg');
       mask-position: center;
       mask-size: contain;
       mask-repeat: no-repeat;
@@ -97,7 +97,7 @@
     }
 
     &--four {
-      mask: url('../../images/icons/html-icon.svg');
+      mask: url('../images/icons/html-icon.svg');
       mask-position: center;
       mask-size: contain;
       mask-repeat: no-repeat;
